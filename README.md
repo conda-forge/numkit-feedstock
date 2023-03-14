@@ -1,11 +1,11 @@
-About numkit
-============
+About numkit-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/numkit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Becksteinlab/numkit
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/numkit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Numerical first aid kit (with numpy/scipy).
 
