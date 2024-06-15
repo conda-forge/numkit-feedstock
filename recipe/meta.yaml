@@ -18,12 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
   run:
-    - python >=3.6
+    - python >=3.9
     - numpy >=1.9
     - scipy >=1.0
-    - six
 
 test:
   imports:
@@ -44,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - njzjz
+    - orbeckst
