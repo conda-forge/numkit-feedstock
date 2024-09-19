@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@njzjz](https://github.com/njzjz/)
+* [@orbeckst](https://github.com/orbeckst/)
 
