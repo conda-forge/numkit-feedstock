@@ -1,27 +1,26 @@
 {% set name = "numkit" %}
 {% set version = "1.3.1" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/numkit-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/numkit-{{ version }}.tar.gz
   sha256: 18fba519ab4714d9426a818c04e4656bc60368169db0f65f5eece2ddae0e3211
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=1.9
     - scipy >=1.0
 
@@ -32,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Becksteinlab/numkit
@@ -45,4 +45,3 @@ extra:
   recipe-maintainers:
     - orbeckst
     - njzjz
-    - orbeckst
